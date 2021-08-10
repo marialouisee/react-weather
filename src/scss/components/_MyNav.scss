@@ -1,0 +1,17 @@
+.nav {
+    @include card-nav-style;
+    
+    ul{
+        display: flex;
+        li{
+            @include nav;
+
+            a {
+                @include a
+            }
+            .active {
+                color: lightskyblue;
+            }
+        }
+    }
+}

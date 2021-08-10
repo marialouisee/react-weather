@@ -1,0 +1,30 @@
+// Mixins
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card-nav-style {
+    width: 80vw;
+    margin: 50px auto ;
+    border: 1px solid black;
+    
+}
+
+@mixin nav {
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+    padding: 10px 20px;
+    background-color: $transparent-white;
+    &:first-child{
+        border-right: 1px solid black;
+    }
+}
+
+@mixin a {
+    color: black;
+    text-decoration: none;
+}

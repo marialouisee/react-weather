@@ -1,0 +1,27 @@
+.forecastCard {
+    @include card-nav-style;
+    height: 400px;
+    flex-direction: column;
+    div{
+        padding: 20px;
+        p {
+            @include center;
+        }
+    }
+
+    .forecastNav {
+        display: flex;
+        font-size: 12px;
+        li {
+            @include nav;
+            .active {
+                color: lightskyblue;
+            }
+        }
+        a {
+            @include a
+        }
+        
+
+    }
+}
