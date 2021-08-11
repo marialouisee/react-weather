@@ -1,27 +1,34 @@
 .forecastCard {
-    @include card-nav-style;
-    height: 400px;
+    @include card-style;
+    min-height: 400px;
     flex-direction: column;
     div{
-        padding: 20px;
         p {
             @include center;
         }
     }
 
-    .forecastNav {
+    .title {
+        background-color: rgba(135, 206, 250, 0.637);
+        height: 40px;
+        padding: 15px;
+    }
+
+    .body {
+        @include center;
+        flex-direction: column;
+        margin: 40px;
+        h5 {
+            margin: 15px;
+        }
+    }
+    .bodyTomorrow {
         display: flex;
-        font-size: 12px;
-        li {
-            @include nav;
-            .active {
-                color: lightskyblue;
-            }
+        flex-direction: row;
+        .forecastItems {
+            margin: 30px 20px;
         }
-        a {
-            @include a
-        }
-        
 
     }
+    
 }

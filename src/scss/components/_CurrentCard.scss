@@ -1,5 +1,6 @@
 .currentCard {
-    @include card-nav-style;
+    @include card-style;
+
     height: 400px;
     @include center;
     flex-direction: column;

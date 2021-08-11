@@ -4,7 +4,7 @@ import Context from '../context/Context'
 
 
 const MyNavbar = () => {
-    const {state, dispatch} = useContext(Context)
+    const {dispatch} = useContext(Context)
 
     const setTypeNow =()=>{
         dispatch({type: 'set-type', payload: 'weather'})

@@ -1,11 +1,9 @@
 .nav {
-    @include card-nav-style;
-    
+    @include card-style;
     ul{
         display: flex;
         li{
             @include nav;
-
             a {
                 @include a
             }

@@ -1,7 +1,6 @@
 import React, {useContext} from 'react'
 import Context from '../context/Context';
 import Loader from "react-loader-spinner";
-
 import Clouds from './Clouds';
 
 

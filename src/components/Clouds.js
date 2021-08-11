@@ -6,28 +6,35 @@ import {WiWindy, WiDaySunny, WiLightning, WiRainWind, WiCloudy, WiSnowflakeCold}
 
 const Clouds = () => {
     const {state} = useContext(Context)
-    const description = state.weather.weather ? state.weather.weather[0].description : false
+   
+    console.log(state)
 
+    const description = state.type === 'weather'? (state.weather.weather? state.weather.weather[0].description : '' ): (state.forecast.list?  state.forecast.list[0].weather[0].description : '')
+        
 
     const wIcons = () => {
 
-        const current = state.weather.weather ? state.weather.weather[0].main : false
+        console.log(state)
+        
+        const current = state.type === 'weather'?
+        (state.weather.weather ?  state.weather.weather[0].main : "") :(state.forecast.list? state.forecast.list[0].weather[0].main : '') 
+        
 
         switch (current) {
             case 'Thunderstorm':
-                return <WiLightning size={50}/>;
+                return <WiLightning size={50} color='lightskyblue'/>;
             case 'Clear':
-                return <WiDaySunny size={50}/>;
+                return <WiDaySunny size={50} color='lightskyblue'/>;
             case 'Clouds':
-                return <WiCloudy size={50}/>;
+                return <WiCloudy size={50} color='lightskyblue'/>;
             case 'Rain':
-                return <WiRainWind size={50}/>;
+                return <WiRainWind size={50} color='lightskyblue'/>;
             case 'Snow':
-                return <WiSnowflakeCold size={50}/>;
+                return <WiSnowflakeCold size={50} color='lightskyblue'/>;
             case 'Drizzle' :
-                return <WiRainWind size={50}/>;
+                return <WiRainWind size={50} color='lightskyblue'/>;
             case 'Mist' || "Smoke" || 'Haze' || 'Dust' || 'Fog' || 'Sand' || 'Ash' || 'Squall' || 'Tornado':
-                return <WiWindy size={50}/>;
+                return <WiWindy size={50} color='lightskyblue'/>;
             default: 
                 return '';
         }
@@ -36,7 +43,7 @@ const Clouds = () => {
    
     return (
         <div>
-            <div>{description? `${description}` : <Loader type="TailSpin" color="black" width={30} height={30}/>}</div>
+            <div>{description ? `${description}` : <Loader type="TailSpin" color="black" width={30} height={30}/>}</div>
             <p>{wIcons()}</p>
 
         </div>

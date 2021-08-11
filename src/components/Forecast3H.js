@@ -1,27 +1,26 @@
 import React, {useContext} from 'react'
 import Context from '../context/Context';
+import Loader from "react-loader-spinner";
+import Clouds from './Clouds';
 
 const Forecast3H = () => {
 
     const {state} = useContext(Context)
 
+    // temperature
+    const temp = state.forecast.list?  (state.forecast.list[0].main.temp).toFixed() : false
+    const feelTemp = state.forecast.list?  (state.forecast.list[0].main.temp).toFixed() : false
 
-    const unixTime = 1628618400;
-    const date2 = new Date(unixTime*1000);
-
-    let date = new Date()
-    const today = state.weather.list ? date.setTime(state.weather.list[0].dt*1000) : false
-
-    setTimeout(()=> {
-        console.log('date2',date2)
-        console.log(date)
-    }, 2000)
-   
-// state.weather.list
-    console.log(state)
+  
+  console.log(state)
     return (
-        <div>
-            
+        <div className='forecast3h'>
+            <p className='title'>3 hours from now</p>
+            <div className='body'>
+                <h2>{temp ? `${temp} ° Celsius` : <div className='spinnerTemp'> temperature: <Loader type="TailSpin" color="black" width={15} height={15}/></div>}  </h2>
+                <h5>{temp ? `feels like ${feelTemp} ° Celsius` : " "   }  </h5>
+                <Clouds/>
+            </div>
         </div>
     )
 }

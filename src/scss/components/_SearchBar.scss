@@ -1,12 +1,12 @@
 .searchBar {
-    
     @include center;
+    flex-direction: column;
 
-    form div {
+    form  {
         border: 1px solid black;
         border-radius: 5px;
         background-color: $transparent-white;
-        
+        margin-right: 10px;  
     }
    
     input {
@@ -23,5 +23,8 @@
         background-color: transparent;
         padding: 10px;
         cursor: pointer;
+    }
+    .flex {
+        @include center
     }
 }
