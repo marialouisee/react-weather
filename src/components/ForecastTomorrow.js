@@ -35,7 +35,7 @@ const ForecastTomorrow = () => {
                 {arrAllIndex.map((item, i)=>{
                    return state.forecast.list? <div className='forecastItems' key={i}>
                                                     <p>{state.forecast.list[item].dt_txt.slice(11, 16)}</p>
-                                                    <p>{state.forecast.list[item].main.temp} °C</p>
+                                                    <p>{state.forecast.list[item].main.temp.toFixed()} °C</p>
                                                     <p>{state.forecast.list[item].weather[0].description}</p>
                                                     </div> 
                                                 : false 

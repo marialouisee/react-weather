@@ -1,7 +1,7 @@
 .searchBar {
     @include center;
     flex-direction: column;
-
+    padding-top: 40px;
     form  {
         border: 1px solid black;
         border-radius: 5px;
