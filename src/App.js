@@ -26,7 +26,7 @@ function App() {
           
           <MyNavbar/>
           <Switch>
-            <Route path='/now' component={CurrentCard}/>
+            <Route path={['/', '/now']} component={CurrentCard}/>
             <Route path='/forecast' component={ForecastCard}/>
           </Switch>
 
