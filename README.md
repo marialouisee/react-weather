@@ -14,11 +14,11 @@
     <a href="https://github.com/marialouisee/react-weather"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/marialouisee/react-weather">View Demo</a>
+    <!-- <a href="https://github.com/marialouisee/react-weather">View Demo</a>
     ·
     <a href="https://github.com/marialouisee/react-weather/issues">Report Bug</a>
     ·
-    <a href="https://github.com/marialouisee/react-weather/issues">Request Feature</a>
+    <a href="https://github.com/marialouisee/react-weather/issues">Request Feature</a> -->
   </p>
 </p>
 
