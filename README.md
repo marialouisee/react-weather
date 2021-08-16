@@ -97,7 +97,10 @@ This is an example of how to list things you need to use the software and how to
     npm install react-loader-spinner --save
     npm install react-icons  
    ```
-
+3. Create .env at root level and add api key 
+    ```sh
+      REACT_APP_API_KEY = your api key
+    ```
 <!-- ROADMAP
 ## Roadmap
 

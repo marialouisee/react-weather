@@ -27,8 +27,7 @@ const WeatherState = (props) => {
   }, [state])
 
   // API KEY AND URL 
-  //! hide API key
-  const apiKey = "e4efe9b0c2159b5e049dbb5024702093";
+  const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrlWeather = `https://api.openweathermap.org/data/2.5/weather?${state.city}&appid=${apiKey}&units=metric`;
   const apiUrlForecast = `https://api.openweathermap.org/data/2.5/forecast?${state.city}&appid=${apiKey}&units=metric`;
 
