@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/marialouisee/react-weather">
-    <img src="./src/images/Logo.png" alt="Logo" width="80" height="80">
+    <img src="./src/images/Logo2.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">React Weather Application</h3>
