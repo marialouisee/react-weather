@@ -20,7 +20,7 @@ const CurrentLocation = () => {
 
   console.log(lat)
   const setCurrLocation = () =>{
-    lat === '' || long === ''? addNotification('There seems to be a problem to locate you. Please allow the browser to acces your location, enter your city or try again in a minute.', 8000) :  dispatch({type: 'set-city', payload: `lat=${lat}&lon=${long}`})
+    lat === '' || long === ''? addNotification('There seems to be a problem with locating you. Please allow the browser to acces your location, enter your city or try again in a few seconds.', 8000) :  dispatch({type: 'set-city', payload: `lat=${lat}&lon=${long}`})
   }
 
     return (

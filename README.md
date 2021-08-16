@@ -81,7 +81,7 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
-* Get an [Openweathermap](https://openweathermap.org/api/one-call-api) API key (One Call API)
+* Get an [Openweathermap](https://openweathermap.org/api/) API key 
 
 
 ### Installation
