@@ -80,8 +80,9 @@ This is an example of how to list things you need to use the software and how to
 * npm
   ```sh
   npm install npm@latest -g
-  Get an [Openweathermap](https://openweathermap.org/api/one-call-api) API key (One Call API)
   ```
+* Get an [Openweathermap](https://openweathermap.org/api/one-call-api) API key (One Call API)
+
 
 ### Installation
 
@@ -91,10 +92,10 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Install NPM packages
    ```sh
-  npm install react-router-dom  
-  npm install node-sass
-  npm install react-loader-spinner --save
-  npm install react-icons  
+    npm install react-router-dom  
+    npm install node-sass
+    npm install react-loader-spinner --save
+    npm install react-icons  
    ```
 
 <!-- ROADMAP
