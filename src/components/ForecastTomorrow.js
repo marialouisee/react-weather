@@ -1,15 +1,9 @@
 import React, {useContext} from 'react'
-import Context from '../context/Context';
-import Loader from "react-loader-spinner";
+import WeatherContext from '../context/weather/WeatherContext';
 
 const ForecastTomorrow = () => {
-    const {state} = useContext(Context)
+    const {state} = useContext(WeatherContext)
 
-    // temperature
-    const tempMin = state.forecast.list?  (state.forecast.list[1].main.temp_min).toFixed() : false
-    const tempMax = state.forecast.list?  (state.forecast.list[1].main.temp_max).toFixed() : false
-
-  
     let date = new Date();
     let nextDay = new Date(date);
     nextDay.setDate(date.getDate() + 1);
@@ -25,7 +19,7 @@ const ForecastTomorrow = () => {
     const index = state.forecast.list? filteredState.indexOf(nextDayString): ''
     
     const arrAllIndex = [index+2, index+4, index+6]
-    const nextDate = `${year}-${month}-${day}`
+    const nextDate = `${day}-${month}-${year}`
 
 
     return (

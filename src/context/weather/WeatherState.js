@@ -1,19 +1,30 @@
 
-import React , {useReducer, useEffect} from 'react'
-import Reducer from './Reducer'
-import Context from './Context'
+import React , {useReducer, useContext, useEffect} from 'react';
+import WeatherReducer from './WeatherReducer';
+import WeatherContext from './WeatherContext';
+import NotificationsContext from '../notification/NotificationsContext';
 
-const GlobalState = (props) => {
+const WeatherState = (props) => {
 
+  const {addNotification} = useContext(NotificationsContext)
+  // local strorage to keep state persistent
+  const fromLocalStorage = localStorage.getItem('state')
+
+  // q= for api url 
   // type = weather or forecast
-  const initialState = {
+
+  const initialState = JSON.parse(fromLocalStorage) || {
     city: 'q=Hamburg', 
     weather: [], 
     forecast: [], 
     type: 'weather'
     }
 
-  const [state, dispatch] = useReducer(Reducer, initialState)
+  const [state, dispatch] = useReducer(WeatherReducer, initialState)
+
+  useEffect(()=> {
+    localStorage.setItem('state', JSON.stringify(state))
+  }, [state])
 
   // API KEY AND URL 
   //! hide API key
@@ -26,7 +37,7 @@ const GlobalState = (props) => {
     fetch(apiUrlWeather)
         .then((res) => {
           if (!res.ok) {
-            alert('please try again')
+            addNotification('Please enter correct city name!', 3500)
           }
           return res.json();
         })
@@ -42,10 +53,10 @@ const GlobalState = (props) => {
   }, [apiUrlForecast])
 
     return (
-        <Context.Provider value = {{state, dispatch}} >
+        <WeatherContext.Provider value = {{state, dispatch}} >
             {props.children}
-        </Context.Provider> 
+        </WeatherContext.Provider> 
     )
 }
 
-export default GlobalState
+export default WeatherState

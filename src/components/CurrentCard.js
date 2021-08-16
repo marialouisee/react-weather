@@ -1,20 +1,18 @@
 import React, {useContext} from 'react'
-import Context from '../context/Context';
+import WeatherContext from '../context/weather/WeatherContext';
 import Loader from "react-loader-spinner";
 import Clouds from './Clouds';
 
-
-
 const CurrentCard = () => {
 
-    const {state} = useContext(Context)
+    const {state} = useContext(WeatherContext)
 
-    console.log(state)
+    // console.log(state)
     // temperature
     const temp = state.weather.main?  (state.weather.main.temp).toFixed() : false
     const feelTemp = state.weather.main?  (state.weather.main.feels_like).toFixed() : false
 
-    // WIND
+    // wind
     const wind = state.weather.wind ? (state.weather.wind.speed) : false
    
     return (

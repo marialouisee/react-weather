@@ -1,0 +1,12 @@
+.notification {
+    width: 90%;
+    height: 180px;
+    position: absolute;
+    top: 120px;
+    background-color: $sec-col;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px $sec-col;
+    display: flex;
+    @include center;
+    
+}

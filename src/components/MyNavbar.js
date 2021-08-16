@@ -1,10 +1,10 @@
 import React, {useContext} from 'react'
 import { NavLink} from "react-router-dom";
-import Context from '../context/Context'
+import WeatherContext from '../context/weather/WeatherContext'
 
 
 const MyNavbar = () => {
-    const {dispatch} = useContext(Context)
+    const {dispatch} = useContext(WeatherContext)
 
     const setTypeNow =()=>{
         dispatch({type: 'set-type', payload: 'weather'})

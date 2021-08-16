@@ -9,7 +9,7 @@
   <h3 align="center">React Weather Application</h3>
 
   <p align="center">
-    This is a fun project to create a small weather app and going for an unconventional design
+    This is a fun project to create a small weather app and going for a less traditional design
     <br />
     <a href="https://github.com/marialouisee/react-weather"><strong>Explore the docs »</strong></a>
     <br />
@@ -55,19 +55,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This project has been created to set into action what I have learned since starting react 1.5 month ago. The aim was to use and an API, I went with the Openweathermap API, and React Hooks (especially useContext and useReducer).
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`marialouisee`, `react-weather`, `twitter_handle`, `email`, `project_title`, `project_description`
+The App will let you choose between your current location and a city of your linking. Select the current weather or a forecase (3h from now and tomorrow).
+
+I didn't particularly liked the Openweathermap icons and decided to work with the simple but charming react-icons (weather icons) -> [Clouds.js](https://github.com/marialouisee/react-weather/blob/main/src/components/Clouds.js)
 
 
 ### Built With
 
-* []()
-* []()
-* []()
-
+* This application in created with [Create React App](https://create-react-app.dev/)
+* [React](https://reactjs.org/) *(v17.0.2)*
+* Styling syntax was written in SCSS
 
 
 <!-- GETTING STARTED -->
@@ -80,11 +79,8 @@ To get a local copy up and running follow these simple steps.
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
-  "node-sass": "^6.0.1"
-    "react-icons": "^4.2.0",
-    "react-loader-spinner": "^4.0.0",
-    "react-router-dom": "^5.2.0",
   npm install npm@latest -g
+  Get an [Openweathermap](https://openweathermap.org/api/one-call-api) API key (One Call API)
   ```
 
 ### Installation
@@ -95,25 +91,17 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Install NPM packages
    ```sh
-   npm install
+  npm install react-router-dom  
+  npm install node-sass
+  npm install react-loader-spinner --save
+  npm install react-icons  
    ```
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
+<!-- ROADMAP
 ## Roadmap
 
-See the [open issues](https://github.com/marialouisee/react-weather/issues) for a list of proposed features (and known issues).
 
+ -->
 
 
 <!-- CONTRIBUTING -->
@@ -139,7 +127,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Maria Louise Genz - mariagenz@gmail.com
 
 Project Link: [https://github.com/marialouisee/react-weather](https://github.com/marialouisee/react-weather)
 
@@ -148,10 +136,9 @@ Project Link: [https://github.com/marialouisee/react-weather](https://github.com
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
-
+* [React Icons](https://react-icons.github.io/react-icons/)
+* [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
+* [Pixabay](https://pixabay.com/)
 
 
 

@@ -1,6 +1,5 @@
-import React from 'react'
 
-const Reducer = (state, action) => {
+const WeatherReducer = (state, action) => {
     // console.log(action.payload)
     switch (action.type) {
         case 'set-data-weather':
@@ -17,4 +16,4 @@ const Reducer = (state, action) => {
     }
 }
 
-export default Reducer
+export default WeatherReducer

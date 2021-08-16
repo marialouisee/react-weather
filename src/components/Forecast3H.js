@@ -1,11 +1,11 @@
 import React, {useContext} from 'react'
-import Context from '../context/Context';
+import WeatherContext from '../context/weather/WeatherContext';
 import Loader from "react-loader-spinner";
 import Clouds from './Clouds';
 
 const Forecast3H = () => {
 
-    const {state} = useContext(Context)
+    const {state} = useContext(WeatherContext)
 
     // temperature
     const temp = state.forecast.list?  (state.forecast.list[0].main.temp).toFixed() : false
