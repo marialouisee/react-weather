@@ -59,7 +59,7 @@ This project has been created to set into action what I have learned since start
 
 The App will let you choose between your current location and a city of your linking. Select the current weather or a forecase (3h from now and tomorrow).
 
-I didn't particularly liked the Openweathermap icons and decided to work with the simple but charming react-icons (weather icons) -> [Clouds.js](https://github.com/marialouisee/react-weather/blob/main/src/components/Clouds.js) component
+I didn't particularly liked the Openweathermap icons and decided to work with the simple but charming react-weather-icons (react icons) -> [Clouds.js](https://github.com/marialouisee/react-weather/blob/main/src/components/Clouds.js) component
 
 
 ### Built With
