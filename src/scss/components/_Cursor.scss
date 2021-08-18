@@ -1,0 +1,23 @@
+.cursor {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../images/cloud.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    transform: translate(-50%, -20%);
+    pointer-events: none;
+    // z-index: 19999;
+    mix-blend-mode: difference;
+    transition: all 150ms ease;
+    transition-property: opacity;
+  }
+  .cursorHidden {
+      opacity: 0;
+  }
+
+  .cursorClicked {
+      
+    transform: translate(-50%, -25%) scale(0.95);
+
+  }

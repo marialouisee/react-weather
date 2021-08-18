@@ -19,7 +19,6 @@ const CurrentCard = () => {
         <div className='currentCard'>
             <div>
                 <h2>{temp ? `${temp} ° Celsius` : <div className='spinnerTemp'> temperature: <Loader type="TailSpin" color="black" width={15} height={15}/></div>}  </h2>
-                
                 <h5>{temp ? `feels like ${feelTemp} ° Celsius` : " "   }  </h5>
             </div>
             <Clouds/>

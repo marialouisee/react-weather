@@ -16,6 +16,8 @@ import SearchBar from './components/SearchBar';
 import MyNavbar from './components/MyNavbar';
 import CurrentCard from './components/CurrentCard';
 import ForecastCard from './components/ForecastCard';
+import Cursor from './components/Cursor';
+import Sound from './components/Sound';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
       <div className="App" style={{backgroundImage: `url(${bgImage})`}}>
       <NotificationsState>
         <WeatherState>
+            <Cursor/>
+            <Sound/> 
             <SearchBar/>
             <MyNavbar/>
             <Switch>

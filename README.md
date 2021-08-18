@@ -96,6 +96,8 @@ This is an example of how to list things you need to use the software and how to
     npm install node-sass
     npm install react-loader-spinner --save
     npm install react-icons  
+    npm install use-sound
+
    ```
 3. Create .env at root level and add api key 
     ```sh
@@ -142,14 +144,16 @@ Project Link: [https://github.com/marialouisee/react-weather](https://github.com
 
 * [React Icons](https://react-icons.github.io/react-icons/)
 * [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
+* [React useSounds](https://www.npmjs.com/package/use-sound)
 * [Pixabay](https://pixabay.com/)
+* [Music](https://www.bensound.com)
 
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/marialouisee/repo.svg?style=for-the-badge
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/marialouisee/repo.svg?style=for-the-badge
 [contributors-url]: https://github.com/marialouisee/react-weather/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/marialouisee/repo.svg?style=for-the-badge
 [forks-url]: https://github.com/marialouisee/react-weather/network/members
@@ -158,6 +162,4 @@ Project Link: [https://github.com/marialouisee/react-weather](https://github.com
 [issues-shield]: https://img.shields.io/github/issues/marialouisee/repo.svg?style=for-the-badge
 [issues-url]: https://github.com/marialouisee/react-weather/issues
 [license-shield]: https://img.shields.io/github/license/marialouisee/repo.svg?style=for-the-badge
-[license-url]: https://github.com/marialouisee/react-weather/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/marialouisee
+[license-url]: https://github.com/marialouisee/react-weather/blob/master/LICENSE.txt -->

@@ -36,7 +36,7 @@ const Clouds = () => {
 
    
     return (
-        <div>
+        <div className='clouds'>
             <div>{description ? `${description}` : <Loader type="TailSpin" color="black" width={30} height={30}/>}</div>
             <p>{wIcons()}</p>
 

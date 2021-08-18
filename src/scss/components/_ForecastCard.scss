@@ -3,9 +3,14 @@
     min-height: 400px;
     flex-direction: column;
     div{
+        padding: 15px;
+
         p {
             @include center;
         }
+    }
+    .spinnerTemp{
+        @include center
     }
 
     .title {
@@ -17,10 +22,8 @@
     .body {
         @include center;
         flex-direction: column;
-        margin: 40px;
-        h5 {
-            margin: 15px;
-        }
+        margin-top: 40px;
+        
     }
     .bodyTomorrow {
         display: flex;
