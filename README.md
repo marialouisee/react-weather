@@ -134,6 +134,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Maria Louise Genz - mariagenz@gmail.com
+[LinkedIn](www.linkedin.com/in/maria-louise-genz)
 
 Project Link: [https://github.com/marialouisee/react-weather](https://github.com/marialouisee/react-weather)
 
@@ -148,18 +149,3 @@ Project Link: [https://github.com/marialouisee/react-weather](https://github.com
 * [Pixabay](https://pixabay.com/)
 * [Music](https://www.bensound.com)
 
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/marialouisee/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/marialouisee/react-weather/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/marialouisee/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/marialouisee/react-weather/network/members
-[stars-shield]: https://img.shields.io/github/stars/marialouisee/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/marialouisee/react-weather/stargazers
-[issues-shield]: https://img.shields.io/github/issues/marialouisee/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/marialouisee/react-weather/issues
-[license-shield]: https://img.shields.io/github/license/marialouisee/repo.svg?style=for-the-badge
-[license-url]: https://github.com/marialouisee/react-weather/blob/master/LICENSE.txt -->
