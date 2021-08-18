@@ -148,4 +148,6 @@ Project Link: [https://github.com/marialouisee/react-weather](https://github.com
 * [React useSounds](https://www.npmjs.com/package/use-sound)
 * [Pixabay](https://pixabay.com/)
 * [Music](https://www.bensound.com)
+* [SASS](https://sass-lang.com/)
+* [React Router](https://reactrouter.com/web/guides/quick-start)
 
