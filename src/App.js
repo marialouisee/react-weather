@@ -33,8 +33,8 @@ function App() {
             <SearchBar/>
             <MyNavbar/>
             <Switch>
-              <Route exact path='/forecast' component={ForecastCard}/>
-              <Route exact path={['/', '/now']} component={CurrentCard}/>
+              <Route exact path='/react-weather/forecast' component={ForecastCard}/>
+              <Route exact path={['react-weather/', '/react-weather/now']} component={CurrentCard}/>
               <Route component={PageNotFound}/>
             </Switch>
         </WeatherState>
