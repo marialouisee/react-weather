@@ -17,8 +17,8 @@ const MyNavbar = () => {
     return (
         <nav className='nav'>
             <ul>
-                <li><NavLink onClick={setTypeNow} to='/now' activeClassName='active'>now</NavLink></li>
-                <li><NavLink onClick={setTypeForecast} to='/forecast' activeClassName='active'>forecast</NavLink></li>
+                <li><NavLink onClick={setTypeNow} to='/react-weather/now' activeClassName='active'>now</NavLink></li>
+                <li><NavLink onClick={setTypeForecast} to='/react-weather/forecast' activeClassName='active'>forecast</NavLink></li>
             </ul>
         </nav>
     )
