@@ -41,8 +41,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <!-- <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li> -->
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -57,7 +55,7 @@
 
 This project has been created to set into action what I have learned since starting react 1.5 month ago. The aim was to use and an API, I went with the Openweathermap API, and React Hooks (especially useContext and useReducer).
 
-The App will let you choose between your current location and a city of your linking. Select the current weather or a forecase (3h from now and tomorrow).
+The App will let you choose between your current location and a city of your linking. Select the current weather or a forecast (3h from now and tomorrow). Gimmick: Play music matching the weather conditions.
 
 I didn't particularly liked the Openweathermap icons and decided to work with the simple but charming react-weather-icons (react icons) -> [Clouds.js](https://github.com/marialouisee/react-weather/blob/main/src/components/Clouds.js) component
 
@@ -103,12 +101,6 @@ This is an example of how to list things you need to use the software and how to
     ```sh
       REACT_APP_API_KEY = your api key
     ```
-<!-- ROADMAP
-## Roadmap
-
-
- -->
-
 
 <!-- CONTRIBUTING -->
 ## Contributing

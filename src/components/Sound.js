@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, {useState, useContext, useEffect} from "react";
 import useSound from "use-sound";
 import WeatherContext from "../context/weather/WeatherContext";
 
@@ -39,9 +39,13 @@ const Sound = () => {
                 return '';
         }
     }
- 
     const [playing, setPlaying] = useState(false);
     const [play, {stop}] = useSound(selectSoud());
+
+    useEffect(() => {
+        playing? stop(): stop()
+        setPlaying(false)
+    }, [state])
 
 
     return (

@@ -9,7 +9,7 @@ const Cursor = () => {
     useEffect(() => {
       addEventListeners();
       return () => removeEventListeners();
-    }, []);
+    });
 
     const addEventListeners = () => {
       document.addEventListener("mousemove", onMouseMove);
