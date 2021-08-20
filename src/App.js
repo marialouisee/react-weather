@@ -18,7 +18,7 @@ import CurrentCard from './components/CurrentCard';
 import ForecastCard from './components/ForecastCard';
 import Cursor from './components/Cursor';
 import Sound from './components/Sound';
-import PageNotFound from './components/PageNotFound';
+import HelloThere from './components/HelloThere';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
             <Switch>
               <Route  path='/react-weather/forecast' component={ForecastCard}/>
               <Route  path={['react-weather/', '/react-weather/now']} component={CurrentCard}/>
-              <Route component={PageNotFound}/>
+              <Route component={HelloThere}/>
             </Switch>
         </WeatherState>
       </NotificationsState>
