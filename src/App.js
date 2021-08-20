@@ -18,6 +18,7 @@ import CurrentCard from './components/CurrentCard';
 import ForecastCard from './components/ForecastCard';
 import Cursor from './components/Cursor';
 import Sound from './components/Sound';
+import PageNotFound from './components/PageNotFound';
 
 
 function App() {
@@ -32,8 +33,9 @@ function App() {
             <SearchBar/>
             <MyNavbar/>
             <Switch>
-              <Route path='/forecast' component={ForecastCard}/>
-              <Route path={['/', '/now']} component={CurrentCard}/>
+              <Route exact path='/forecast' component={ForecastCard}/>
+              <Route exact path={['/', '/now']} component={CurrentCard}/>
+              <Route component={PageNotFound}/>
             </Switch>
         </WeatherState>
       </NotificationsState>

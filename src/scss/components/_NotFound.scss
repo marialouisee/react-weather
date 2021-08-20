@@ -1,0 +1,12 @@
+.notFound{
+    @include card-style;
+    height: 400px;
+    @include center;
+    flex-direction: column;
+    a {
+        color: black;
+    }
+    h1 {
+        padding-bottom: 10px;
+    }
+}
